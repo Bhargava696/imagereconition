@@ -1,0 +1,71 @@
+body {
+    font-family: 'Staatliches', cursive;
+    background: linear-gradient(rgb(39, 230, 255) 0%, lightgreen 100%);
+}
+
+.colsada img {
+    width: 100px;
+}
+
+.jamesCamera {
+    background: coral;
+    padding: 10px;
+    margin-top: 10px;
+    border: 3px dashed blue;
+}
+
+.jamesCamera label {
+    background: rgb(255, 152, 238);
+    width: 350px;
+    padding: 10px;
+    margin-bottom: 6px;
+    box-shadow: 5px 10px 15px rgb(66, 65, 65);
+    font-size: 30px;
+}
+
+.colsada h1 {
+    font-size: 60px;
+}
+
+#jamesCamera,
+#captPic {
+    width: 350px;
+    height: 299px;
+    box-shadow: 4px 10px 14px grey;
+    border: 2px;
+}
+
+.jamesCamera button {
+    width: 350px;
+    font-size: 20px;
+    border: 3px;
+    box-shadow: 5px 10px 14px;
+}
+
+::selection {
+    background: rgb(255, 251, 0);
+}
+
+.sawer {
+    margin-bottom: 48px;
+}
+
+.sawer h3 {
+    background: beige;
+    border-radius: 11px;
+    padding: 10px;
+    box-shadow: 5px 10px 15px rgb(70, 26, 26);
+}
+
+.sawer img {
+    width: 75px;
+}
+
+.vion{
+    position: fixed;
+    font-size:22px;
+    background-color: dimgray;
+    color:white;
+    width:100%;
+    bottom: 0;
+}
