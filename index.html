@@ -1,46 +1,194 @@
 <html>
 
 <head>
-  <title>MobileNet</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
-
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <center>
-    <div class="col-xs-12 colsada">
-      <h1>Detective...<img src="logo.gif"></h1>
-    </div>
-    <div class="col-xs-12 col-sm-6 jamesCamera">
-      <label>Webcam</label>
-      <div id="jamesCamera">
-      </div>
-      <br>
-      <button class="btn btn-warning" onclick="sarade();">Take a pic</button>
-    </div>
-    <div class="col-sm-6 col-xs-12 jamesCamera">
-      <label>Captured image</label>
-      <div id="captPic"></div>
-      <br>
-      <button onclick="image();" class="btn btn-primary">Bring the Detective</button>
-    </div>
-  </center>
-  <div class="col-xs-12 sawer">
-    <h3 class="col-xs-12 col-sm-6"><img src="blub.gif"><span id="name"></span></h3>
-  </div>
-  <div class="vion" style="text-align:center;">
-    Developed by Bhargava
-  </div>
-  <script src="main.js"></script>
+    <center>
+        <div class="good">
+            <h1 style="color:white;">Case study <img
+                    src="https://www.vippng.com/png/detail/66-666829_case-study-vector.png"></h1>
+        </div>
+        <br>
+        <br>
+        <ol>
+            <div class="image">
+                <li>
+                    <b>Test image - </b>
+                    <br>
+                    <br>
+                    <img src="https://pngimg.com/uploads/book/book_PNG2114.png" class="img-responsive">
+                </li>
+                <h5>Output on <b>Mobilenet</b> -
+                    <span>Lampshade</span>
+                </h5>
+                <h5>Output on <b>Wolfram</b> -
+                    <span>Card case</span>
+                </h5>
+
+                <div class="vhon">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>None is correct</h4>
+                </div>
+            </div>
+        </ol>
+        <ol>
+            <div class="image">
+                <li>
+                    <b>Test image - </b>
+                    <br>
+                    <br>
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/053518/01/fnd/IND/fmt/png/Training-Sportstyle-0.6L-Water-Bottle"
+                        class="img-responsive">
+                </li>
+                <h5>Output on <b>Mobilenet</b> -
+                    <span>Water Bottle</span>
+                </h5>
+                <h5>Output on <b>Wolfram</b> -
+                    <span>cigarette lighter</span>
+                </h5>
+
+                <div class="vhon">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>None is correct</h4>
+                </div>
+            </div>
+        </ol>
+        <ol>
+            <div class="image">
+                <li>
+                    <b>Test image - </b>
+                    <br>
+                    <br>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNm0idLbRcEF8zLz8LwUFxK1SD84c8qUPvUA&usqp=CAU"
+                        class="img-responsive">
+                </li>
+                <h5>Output on <b>Mobilenet</b> -
+                    <span>Fireguard</span>
+                </h5>
+                <h5>Output on <b>Wolfram</b> -
+                    <span>Earmuff</span>
+                </h5>
+
+                <div class="vhon">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>None is correct</h4>
+                </div>
+            </div>
+        </ol>
+        <ol>
+            <div class="image">
+                <li>
+                    <b>Test image - </b>
+                    <br>
+                    <br>
+                    <img src="https://www.ikea.com/in/en/images/products/malm-bed-frame-high-black-brown__0638608_pe699032_s5.jpg"
+                        class="img-responsive">
+                </li>
+                <h5>Output on <b>Mobilenet</b> -
+                    <span>Wash Basin</span>
+                </h5>
+                <h5>Output on <b>Wolfram</b> -
+                    <span>Murphy bed</span>
+                </h5>
+
+                <div class="vhon">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>Wolfram is more accurate</h4>
+                </div>
+            </div>
+        </ol>
+        <ol>
+            <div class="image">
+                <li>
+                    <b>Test image - </b>
+                    <br>
+                    <br>
+                    <img src="https://5.imimg.com/data5/XS/LT/MY-517376/fancy-cup-500x500.jpg" class="img-responsive">
+                </li>
+                <h5>Output on <b>Mobilenet</b> -
+                    <span>Coffee Mug</span>
+                </h5>
+                <h5>Output on <b>Wolfram</b> -
+                    <span>Mug</span>
+                </h5>
+
+                <div class="vhon">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>Both of them are correct</h4>
+                </div>
+            </div>
+        </ol>
+        <ol>
+            <div class="image">
+                <li>
+                    <b>Test image - </b>
+                    <br>
+                    <br>
+                    <img src="https://crdms.images.consumerreports.org/c_lfill,w_598/prod/products/cr/models/402431-smartphones-apple-iphone-12-10016496.png"
+                        class="img-responsive">
+                </li>
+                <h5>Output on <b>Mobilenet</b> -
+                    <span>Remote control</span>
+                </h5>
+                <h5>Output on <b>Wolfram</b> -
+                    <span>Remote control</span>
+                </h5>
+
+                <div class="vhon">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>None is correct</h4>
+                </div>
+            </div>
+        </ol>
+        <ol>
+            <div class="image">
+                <li>
+                    <b>Test image - </b>
+                    <br>
+                    <br>
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/81QnGdrGwsL._UL1500_.jpg"
+                        class="img-responsive">
+                </li>
+                <h5>Output on <b>Wolfram</b> -
+                    <span>cleats</span>
+                </h5>
+                <h5>Output on <b>Mobilenet Model</b> -
+                    <span>Socks</span>
+                </h5>
+
+                <div class="vhon">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>Wolfram is more accurate</h4>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="fancy">
+                <h4> I have tested 7 images<br>
+                    <b>Wolfram</b> have predicted 3 of them correctly. And <b>Mobilenet</b> have predicted 1 of them
+                    correctly. <br>
+                    So according to my case study <b>Wolfram</b> is more Accurate</h4>
+            </div>
+        </ol>
+    </center>
+    <script src="main.js"></script>
 </body>
 
 </html>
